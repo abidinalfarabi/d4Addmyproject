@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      </head>
+
+<body>
+     <!-- navbar -->
+     <nav>
+        <div class="navigation">
+          <div class="nav-left">
+            <img src="./assets/image/dumbwys.png" alt="" />
+            <div class="link">
+              <a href="index.html"class="active-link">Home</a>
+              <a href="blog.html">My Project</a>
+            </div>
+          </div>
+          <div class="nav-right">
+            <a href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+<!-- Contact-->
+    <div class="get">
+        <h1>GET IN TOUCH</h1>
+    </div>
+    
+    <div class="git" >
+        <div class="gut">
+            <label class="label-contact">Name</label>
+            <input type="text" class="input-contact" id="Tname"/>
+            <label class="label-contact">Email</label>
+            <input type="text" class="input-contact" id="Temail" />
+            <label class="label-contact">Phone number</label>
+            <input type="text" class="input-contact" id="Tphone" />
+            <label class="label-contact">Subject</label>
+            <select class="input-contact" id="Tsubject">
+                <option class="op"></option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+            </select>
+            <label class="label-contact">Your message</label>
+            <textarea class="input-contact" rows="4" cols="50" id="Tmessage"></textarea>
+            <input type="button" value="Submit" class="submit-contact" onclick="submitData()" />
+        </div>
+    </div>
+<!--contact end-->
+<script src="contact.js"></script>
+</body>
+</html>
